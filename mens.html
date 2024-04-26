@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+<!------ Google Fonts ------>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Karla:wght@200;300;400;500&family=Montserrat+Alternates:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+<!-- Bootstrap CSS-->	
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+<!--External JS-->
+<script src="shopping.js" async></script>
+
+</head>
+
+<!----External CSS----->
+<link rel="stylesheet" type="text/css" href="menshoppiing.css">
+
+<!-----FontAwsome------>
+<script src="https://kit.fontawesome.com/9d9796826b.js" crossorigin="anonymous"></script>
+
+<body>
+<!---- Bootstrap Script---->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<!--Heading-->
+<div>
+  <nav>
+    <div class="logo">
+        <a href="index.html" class="navbar-brand" ><i class="fa-solid fa-gift" ></i>TRENDS</a>
+    </div>
+    <ul>
+        <li>
+            <a id="home" href="index.html">Home</a>
+            <a id="men"  href="mens.html">Mens</a>
+            <a id="women"  href="shopping.html">Women</a>
+            <a id="contact"  href="Contact.html">Contact</a>
+            <a href="#shopping-cart" style="color: black;">  <i style="margin-right: 10;" class="fa-solid fa-cart-shopping justify-content-end fa-xl" ></i></a>
+
+        </li>
+    </ul>
+  </nav>
+ 
+
+
+<!-- Item Categories-->
+<section id="category">
+  <div class="container-fluid">
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+      <div class=" col">
+        <div class="card">
+          <img src="https://sslimages.shoppersstop.com/sys-master/root/h24/h84/32048102506526/Shirts%20Web_gt5.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+
+      <div class=" col">
+        <div class="card">
+          <img src="https://sslimages.shoppersstop.com/sys-master/root/ha3/h8b/32048102768670/T-shirts%20Web_g5.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+
+      <div class=" col">
+        <div class="card">
+          <img src="https://sslimages.shoppersstop.com/sys-master/root/h62/h8f/32048102899742/Jeans%20Web_ce3.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+
+      <div class=" col">
+        <div class="card">
+          <img src="https://sslimages.shoppersstop.com/sys-master/root/hae/he4/32048103292958/Trouser%20Web_dr4.jpg" class="card-img-top" alt="..." >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+
+<a href="#category" class="up-icon"><i class="fa-solid fa-circle-chevron-up"></i></a>
+ 
+
+<!----------------------------------------------------------------------------------->
+<!--Filter Button-->
+<div class = "filter-btns">
+  <a href="mens.html"><button type="button" class="filter-btn" id="refresh"><i class="fa-solid fa-rotate" ></i> Refresh</button></a>
+   
+  <button type = "button" class = "filter-btn" id = "all">all</button>
+  <button type = "button" class = "filter-btn" id = "new">new</button>
+  <button type = "button" class = "filter-btn" id = "office-wear">office wear</button>
+  <button type = "button" class = "filter-btn" id = "t-shirts">t-shirts</button>
+  <button type = "button" class = "filter-btn" id = "offers">offers</button>
+</div>
+
+
+<!--Product Cards-->
+<section id="product-cards">
+  <div class="container-fluid">
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+      <div class=" col filter-item all new ">
+        <div class="card h-100">
+          <img src="https://assets.ajio.com/medias/sys_master/root/20230707/WrdB/64a80092eebac147fc5c16c1/-473Wx593H-443015877-olive-MODEL.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Men Knitted Loose Fit Shirt with Mandarin Collar</h5>
+            <p class="card-text shop-item-price"> Rs 2790.00</p>
+            <button type="button" style="width: 100%;background-color:lightblue ;border-color: brown" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all new">
+        <div class="card h-100">
+          <img src="https://assets.ajio.com/medias/sys_master/root/20231124/mmCL/6560cf42ddf77915199a43e6/-473Wx593H-466823595-black-MODEL.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title shop-item-title">Men Slim Fit Shirt with Patch Pocket</h5>
+            <p class="card-text shop-item-price"> Rs 1890.00</p>
+            <button type="button" style="width: 100%;background-color:lightblue ;border-color: brown" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all new">
+        <div class="card h-100">
+          <img src="https://assets.ajio.com/medias/sys_master/root/20230215/lzM3/63ecb7a9f997dde6f4a9066f/-473Wx593H-443008908-red-MODEL4.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Slim Fit Shirt with Band Collar </h5>
+            <p class="card-text shop-item-price"> Rs 3790.00</p>
+            <button type="button" style="width: 100%;background-color:lightblue ;border-color: brown" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all new">
+        <div class="card h-100">
+          <img src="https://assets.ajio.com/medias/sys_master/root/20221202/3kIL/638a1e50f997ddfdbdb3495f/-473Wx593H-441666923-black-MODEL.jpg" class="card-img-top shop-item-image " alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Leaf Print Slim Fit Shirt with Patch Pocket
+              </h5>
+            <p class="card-text shop-item-price"> Rs 1599.00</p>
+            <button type="button" style="width: 100%;background-color:lightblue ;border-color: brown" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all office-wear ">
+        <div class="card h-100">
+          <img src="https://assets.ajio.com/medias/sys_master/root/20230718/M7uU/64b6a793eebac147fc766983/-473Wx593H-443012881-khaki-MODEL.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Men Tropical Print Slim Fit Shirt</h5>
+            <p class="card-text shop-item-price"> Rs 5990.00</p>
+            <button type="button" style="width: 100%;background-color:lightblue ;border-color: brown" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all office-wear">
+        <div class="card h-100">
+          <img src="https://assets.ajio.com/medias/sys_master/root/20230509/rI9y/645a77f4d55b7d0c63a0452a/-473Wx593H-443012870-navy-MODEL.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Men Checked Slim Fit Shirt</h5>
+            <p class="card-text shop-item-price">Rs 3290.00</p>
+            <button type="button" style="width: 100%;background-color:lightblue ;border-color: brown" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class=" col filter-item all office-wear">
+        <div class="card h-100">
+          <img src="https://assets.ajio.com/medias/sys_master/root/20240206/O54T/65c15fd016fd2c6e6adc393d/-473Wx593H-466817674-wine-MODEL.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Men Loose Fit Band-Collar Shirt with Drop-Shoulder</h5>
+            <p class="card-text shop-item-price">Rs 3290.00</p>
+            <button type="button" style="width: 100%;background-color:lightblue ;border-color: brown" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all office-wear">
+        <div class="card h-100">
+          <img src="https://assets.ajio.com/medias/sys_master/root/20240224/oZHt/65d8fcec05ac7d77bb75bfea/-473Wx593H-467102237-aqua-MODEL.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Men Regular Fit Shirt with Spread Collar</h5>
+            <p class="card-text shop-item-price">Rs 3690.00</p>
+            <button type="button" style="width: 100%;background-color:lightblue ;border-color: brown" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all t-shirts">
+        <div class="card h-100">
+          <img src="https://assets.ajio.com/medias/sys_master/root/20230518/mS7p/64664c1e42f9e729d798085c/-473Wx593H-443012889-grey-MODEL.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Men Checked Slim Fit Shirt with Patch Pocket</h5>
+            <p class="card-text shop-item-price">Rs 3450.00</p>
+            <button type="button" style="width: 100%;background-color:lightblue ;border-color: brown" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all t-shirts">
+        <div class="card h-100">
+          <img src="https://assets.ajio.com/medias/sys_master/root/20230201/FcGE/63da4112aeb269c6510854a5/-473Wx593H-443008909-blue-MODEL.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Slim Fit Shirt with Band Collar</h5>
+            <p class="card-text shop-item-price">Rs 2500.00</p>
+            <button type="button" style="width: 100%;background-color:lightblue ;border-color: brown" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all t-shirts">
+        <div class="card h-100">
+          <img src="https://assets.ajio.com/medias/sys_master/root/20230718/l8qI/64b6c1eea9b42d15c95e3fe8/-473Wx593H-443015884-olive-MODEL.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Men Slim Fit Cotton Shirt</h5>
+            <p class="card-text shop-item-price">Rs 2990.00</p>
+            <button type="button" style="width: 100%;background-color:lightblue ;border-color: brown" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all t-shirts">
+        <div class="card h-100">
+          <img src="https://assets.ajio.com/medias/sys_master/root/20221220/jIp3/63a1d598aeb269659cf9ea83/-473Wx593H-469412415-white-MODEL.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Men Striped Slim Fit Cotton Shirt</h5>
+            <p class="card-text shop-item-price">Rs 3990.00</p>
+            <button type="button" style="width: 100%;background-color:lightblue ;border-color: brown" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all offers">
+        <div class="card h-100">
+          <img src="https://assets.ajio.com/medias/sys_master/root/20220208/NIOY/620170edaeb26921af8d632f/-473Wx593H-441136996-navy-MODEL2.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Men Geometric Print Slim Fit Shirt</h5>
+            <p class="card-text shop-item-price">Rs 3690.00</p>
+            <button type="button" style="width: 100%;background-color:lightblue ;border-color: brown" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all offers">
+        <div class="card h-100">
+          <img src="https://assets.ajio.com/medias/sys_master/root/20230921/1ZVS/650b99d8afa4cf41f5f683f5/-473Wx593H-466607654-olive-MODEL.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Printed Oversized Fit Shirt</h5>
+            <p class="card-text shop-item-price">Rs 3690.00</p>
+            <button type="button" style="width: 100%;background-color:lightblue ;border-color: brown" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping  " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all offers">
+        <div class="card h-100">
+          <img src="https://assets.ajio.com/medias/sys_master/root/20230907/SoP1/64f9b7aaafa4cf41f5cf1392/-473Wx593H-443022904-khaki-MODEL.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">NETPLAY
+                Men Striped Slim Fit Cotton Shirt</h5>
+            <p class="card-text shop-item-price">Rs 3690.00</p>
+            <button type="button" style="width: 100%;background-color:lightblue ;border-color: brown" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all offers">
+        <div class="card h-100">
+          <img src="https://assets.ajio.com/medias/sys_master/root/20230125/lQwB/63d10720f997dd708e207a8e/-473Wx593H-443009712-red-MODEL.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Men Checked Slim Fit Shirt with Patch Pocket</h5>
+            <p class="card-text shop-item-price">Rs 3690.00</p>
+            <button type="button" style="width: 100%;background-color:lightblue ;border-color: brown;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--Shopping Cart-->
+<section class="container content-section" id="shopping-cart">
+  
+  <h3 style="text-decoration: underline;text-align: center; margin-bottom: 7%;">Shopping Cart</h3>
+ 
+ <table class="table table-hover table-cart">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody class="cart-items">
+    
+     
+  </tbody>
+</table>
+
+    <div class="cart-total"> 
+      <strong class="cart-total-title">Total</strong>
+      <span  class="cart-total-price" style="text-align: right;">$0</span>
+    </div>
+ 
+
+    <div class="btn-purchase" style="margin-top: 10%;">
+      <button type="button"  class="btn btn-dark btn-purchase "><i class="fa-solid fa-cart-shopping " style="margin-right: 6%;"></i>PURCHASE</button>
+    </div>
+
+</section>
+ 
+<!--Footer-->
+<section id="footer">
+  <div class="card text-center">
+   
+    <div class="card-body">
+      <h3 class="card-title"><i class="fa-solid fa-gift" style="margin-right: 1%;"></i>TRENDS</h3>
+      <p>Thank You , Come Again !!!</p>
+    </div>
+    <div class="card-footer text-muted">
+       <p></p>
+       <p></p>
+    </div>
+  </div>
+</section>
+
+
+
+ 
+
+<!--External JS-->
+<script src="shoppiing.js"></script>
+
+</body>
+</html>
