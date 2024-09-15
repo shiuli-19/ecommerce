@@ -2,52 +2,123 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title> Responsive Contact Us Form </title>
+    <title>Responsive Contact Us Form</title>
     <link rel="stylesheet" href="contact.css">
     <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* Navigation Bar Styles */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: #eeee;
+        padding: 17px;
+        box-shadow: 0px 2px 2px 2px rgb(162, 162, 162);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+      nav .logo {
+        margin-left: 22px;
+        font-size: 24px;
+      }
+      nav .logo a {
+        text-decoration: none;
+        color: black;
+      }
+      ul {
+        margin-right: 45px;
+        margin-top: 7px;
+      }
+      nav ul li {
+        list-style: none;
+      }
+      ul li a {
+        margin-inline: 22px;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+      }
+      ul li i {
+        font-size: 22px;
+      }
+      ul li a:hover {
+        border-bottom: 2px solid black;
+        cursor: pointer;
+      }
+      ul li i:hover {
+        color: gray;
+        cursor: pointer;
+      }
+     
+      /* Body Margin Adjustment */
+      body {
+        margin-top: 80px; /* Adjust this value based on the height of your navbar */
+      }
+    </style>
+  </head>
 <body>
-  <div class="container">
-    
-    <div class="content">
-      <div class="left-side">
-        <div class="address details">
-          <i class="fas fa-map-marker-alt"></i>
-          <div class="topic">Address</div>
-          <div class="text-one">Thiruvalam road,VIT</div>
-          <div class="text-two">Katpadi, Vellore</div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <a href="index.html" class="navbar-brand"><i class="fa-solid fa-gift"></i>TRENDS</a>
         </div>
-        <div class="phone details">
-          <i class="fas fa-phone-alt"></i>
-          <div class="topic">Phone</div>
-          <div class="text-one">+91 9876543212</div>
-          <div class="text-two">+91 1234567891</div>
+        <ul>
+            <li>
+              <a id="home" href="index.html">Home</a>
+                <a id="shop" href="mens.html">Mens</a>
+                <a id="blog" href="shopping.html">Women</a>
+                <a id="contact" href="Contact.html">Contact</a>
+                <a href="#shopping-cart" style="color: black;">  
+                    <i style="margin-right: 10px;" class="fa-solid fa-cart-shopping justify-content-end fa-xl"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contact Form Content -->
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="address details">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="topic">Address</div>
+                    <div class="text-one">Thiruvalam road, VIT</div>
+                    <div class="text-two">Katpadi, Vellore</div>
+                </div>
+                <div class="phone details">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="topic">Phone</div>
+                    <div class="text-one">+91 9876543212</div>
+                    <div class="text-two">+91 1234567891</div>
+                </div>
+                <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one">abcd@gmail.com</div>
+                    <div class="text-two">@gmail.com</div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">Send us a message</div>
+                <p>If you have any queries related to dress material/price/delivery, you can send us a message from here. It's my pleasure to help you.</p>
+                <br>
+                <div class="contact-form">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="86b090b2-1e15-4f04-b196-5cffe385bdba">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Enter your Email" required>
+                        <input type="subject" placeholder="Enter your Subject">
+                        <textarea name="message" cols="40" rows="10" placeholder="Enter your Message" required></textarea>
+                        <input type="submit" value="Submit" class="send" required>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="email details">
-          <i class="fas fa-envelope"></i>
-          <div class="topic">Email</div>
-          <div class="text-one">abcd@gmail.com</div>
-          <div class="text-two">@gmail.com</div>
-        </div>
-      </div>
-      <div class="right-side">
-        <div class="topic-text">Send us a message</div>
-        <p>If you have any queries related to dress material/price/delivery, you can send us message from here. It's my pleasure to help you.</p>
-        <br>
-        <div class="contact-form">
-          <form action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="86b090b2-1e15-4f04-b196-5cffe385bdba">
-              <input type="text" placeholder="Name" required>
-              <input type="email" placeholder="Enter your Email" required>
-              <input type="subject" placeholder="Enter your Subject">
-              <textarea name="message" id="" cols="40" rows="10" placeholder="Enter your Message "required></textarea>
-              <input type="submit" value="submit" class="send" required>
-          </form>
-      </div>
     </div>
-    </div>
-  </div>
+
 </body>
 </html>

@@ -105,6 +105,7 @@ ul li i:hover{
   background-color: #fff;
   margin-inline: 11px;
   border-radius: 5%;
+  padding: 10px;
   
 }
 .crd img{
@@ -137,46 +138,14 @@ ul li i:hover{
   cursor: pointer;
 }
 
-.blog{
-  display: flex;
-  justify-content: center;
-  width: 500px;
-  height: 300px;
-  background-color: #fff;
-  margin-inline: 22px;
-  border-radius: 11px;
 
-}
-.blog:hover{
-  transition: 0.6s ease;
-  width: 520px;
-  height: 320px;
-}
-.blog img{
-  padding: 22px;
-  width: 85%;
-}
-.blogText{
-  padding: 12px;
-  margin-top: 33px;
-}
-.blogText a{
-  width: 130px;
-  padding: 4px;
-  height: 18px;
-  background-color: rgb(4, 136, 136);
-  color: white;
-  font-size: 18px;
-  border-radius: 5px;
-position: relative;
-top: 33px;
-}
 .letter{
   display: flex;
   justify-content: space-between;
   color: white;
   background-color:black;
   padding: 43px;
+  border-radius: 5px;
 }
 .inp{
   display: flex;
@@ -209,28 +178,6 @@ top: 33px;
   margin-top: 11px;
 }
 
-/* about */
-.about{
-  display: none;
-}
-.aboutus{
-  background-color: black;
-  color: white;
-  padding: 56px;
-  font-size: 19px;
-}
-.me{
-  display: flex;
-  justify-content: center;
-  width: 700px;
-  background-color: #fff;
-  padding: 33px;
-  margin-left: 18%;
-  margin-top: 7%;
-}
-.me img{
-  width: 54%;
-}
 
 /* /contact */
 

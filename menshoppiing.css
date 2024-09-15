@@ -3,12 +3,14 @@ body{
     margin: 0;
     padding: 0;     
 }
+
 nav{
   display: flex;
   justify-content: space-between;
   background-color: #eeee;
   padding: 17px;
   box-shadow: 0px 2px 2px 2px rgb(162, 162, 162);
+  font-family: 'Roboto', sans-serif;
 }
 nav .logo{
   margin-left: 22px;
@@ -34,7 +36,7 @@ ul li a{
 ul li i{
   font-size: 22px;
 }
-ul li #men{
+ul li #shop{
   color: rgb(5, 167, 167);
 }
 ul li a:hover{
@@ -45,11 +47,6 @@ ul li i:hover{
   color: gray;
   cursor: pointer;
 }
-
-.navbar{
-  font-family: 'Montserrat Alternates', sans-serif;
-}
-
 #category{
   padding: 5% 6%;
 }
@@ -146,3 +143,49 @@ ul li i:hover{
    top: 85%;
    font-size: 2rem;
  }
+ .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
+.shop-item-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.shop-item-price {
+  font-size: 18px;
+  color: #555;
+}
+
+.shop-item-button {
+  width: 100%;
+  padding: 12px 0;
+  background-color: lightblue;
+  border-color: brown;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.shop-item-button {
+  margin-top: auto;
+}
